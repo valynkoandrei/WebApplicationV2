@@ -22,7 +22,7 @@ public class DeleteRecordServlet extends HttpServlet {
 
         try {
             BL bl = new BL();
-        bl.deleteRecord(id-1);
+        bl.deleteRecord(id);
 
         } catch (SQLException e) {
             e.printStackTrace();
