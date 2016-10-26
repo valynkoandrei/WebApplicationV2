@@ -33,7 +33,6 @@ public class EditRecordServlet extends HttpServlet {
 
         int id = Integer.parseInt(request.getParameter("id"));
 
-        System.out.println(id);
 //        String surname = request.getParameter("surname");
 //        String phone = request.getParameter("phone");
 //        request.getSession().getAttribute("id");
@@ -41,11 +40,13 @@ public class EditRecordServlet extends HttpServlet {
 //        if(request.getParameter("username")!=null)
 //          if(Integer.parseInt(request.getSession().getAttribute("id").toString()) !=0 )
 //              request.getSession().setAttribute("id",request.getSession().getAttribute("id"));
-
-        request.getSession().setAttribute("id", arrayList.get(id-1).getId());
-        request.getSession().setAttribute("name", arrayList.get(id-1).getName());
-        request.getSession().setAttribute("surname", arrayList.get(id-1).getSurname());
-        request.getSession().setAttribute("phone", arrayList.get(id-1).getPhone());
+        int i;
+        for (i=0; i != arrayList.size(); i++)
+            if (arrayList.get(i).getId()==id)  break;
+        request.getSession().setAttribute("id", arrayList.get(i).getId());
+        request.getSession().setAttribute("name", arrayList.get(i).getName());
+        request.getSession().setAttribute("surname", arrayList.get(i).getSurname());
+        request.getSession().setAttribute("phone", arrayList.get(i).getPhone());
 
         request.getRequestDispatcher("View/record.jsp").include(request, response);
     }

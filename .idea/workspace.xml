@@ -107,27 +107,27 @@
       <file leaf-file-name="SaveRecordServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet/SaveRecordServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="324">
               <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="36" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditRecordServlet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EditRecordServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/servlet/EditRecordServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="62" />
+            <state relative-caret-position="220">
+              <caret line="48" column="66" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteRecordServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DeleteRecordServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet/DeleteRecordServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
+            <state relative-caret-position="152">
               <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding />
             </state>
@@ -137,7 +137,7 @@
       <file leaf-file-name="record.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/View/record.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
+            <state relative-caret-position="38">
               <caret line="16" column="71" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="71" />
               <folding />
             </state>
@@ -191,12 +191,12 @@
         <option value="$PROJECT_DIR$/src/servlet/AddRecordServlet.java" />
         <option value="$PROJECT_DIR$/web/View/record.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/ListServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/EditRecordServlet.java" />
         <option value="$PROJECT_DIR$/web/View/list.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/SaveRecordServlet.java" />
         <option value="$PROJECT_DIR$/src/DAO/JDBCClient.java" />
         <option value="$PROJECT_DIR$/src/Controller/BL.java" />
         <option value="$PROJECT_DIR$/src/servlet/DeleteRecordServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/EditRecordServlet.java" />
       </list>
     </option>
   </component>
@@ -888,12 +888,12 @@
       <option name="presentableId" value="Default" />
       <updated>1477038398713</updated>
       <workItem from="1477038404457" duration="1220000" />
-      <workItem from="1477041119004" duration="56618000" />
+      <workItem from="1477041119004" duration="57354000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57838000" />
+    <option name="totallyTimeSpent" value="58574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -954,12 +954,6 @@
           <line>71</line>
           <properties />
           <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/servlet/EditRecordServlet.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1059,14 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/SaveRecordServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="36" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/BL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -1113,22 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/EditRecordServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/View/record.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="16" column="71" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/View/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -1139,8 +1109,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/DeleteRecordServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
+        <state relative-caret-position="152">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/View/record.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="16" column="71" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/SaveRecordServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="36" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/EditRecordServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="48" column="66" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
           <folding />
         </state>
       </provider>
