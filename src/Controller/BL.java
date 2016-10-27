@@ -6,13 +6,14 @@ import model.Clients;
 import java.util.ArrayList;
 
 public class BL {
-    public static ArrayList<Clients> clientsArrayList;
+    private static ArrayList<Clients> clientsArrayList;
     private JDBCClient client;
 
     public BL() {
 
         client = new JDBCClient();
         clientsArrayList = new ArrayList<>();
+
         ArrayList<Integer> idForTable = client.getIdFromTable();
         ArrayList<String> nameForTable = client.getNameFromTable();
         ArrayList<String> surnameForTable = client.getSurnameFromTable();

@@ -9,7 +9,6 @@ import java.util.ArrayList;
 
 public class JDBCClient {
 
-
     private Connection connection;
 
     public JDBCClient() {
