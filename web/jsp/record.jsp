@@ -7,15 +7,15 @@
 <form name="Save" action="SaveRecordServlet" method="POST">
     <table border="1">
         <tr>
-            <td><input type="text" value="<%=session.getAttribute("name")%>" name="inputName"/></td>
+            <td><input type="text" placeholder="Name" value="<%=session.getAttribute("name")%>" name="inputName"/></td>
         </tr>
 
         <tr>
-            <td><input type="text" value="<%=session.getAttribute("surname")%>" name="inputSurname"/></td>
+            <td><input type="text" placeholder="Surname" value="<%=session.getAttribute("surname")%>" name="inputSurname"/></td>
         </tr>
 
         <tr>
-            <td><input type="text" value="<%=session.getAttribute("phone")%>" name="inputPhone"/></td>
+            <td><input type="text" placeholder="Phone" value="<%=session.getAttribute("phone")%>" name="inputPhone"/></td>
         </tr>
 
     </table>

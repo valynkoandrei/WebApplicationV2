@@ -22,7 +22,7 @@ public class AddRecordServlet extends HttpServlet {
         request.getSession().setAttribute("name","");
         request.getSession().setAttribute("surname","");
         request.getSession().setAttribute("phone","");
-        request.getRequestDispatcher("View/record.jsp").include(request, response);
+        request.getRequestDispatcher("jsp/record.jsp").include(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

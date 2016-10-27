@@ -15,6 +15,10 @@ import java.sql.SQLException;
 public class SaveRecordServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
+        processRequest(request, response);
+    }
+
+    private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
             BL bl = new BL();
 
@@ -33,7 +37,6 @@ public class SaveRecordServlet extends HttpServlet {
         }
 
         request.getRequestDispatcher("index.jsp").include(request, response);
-
     }
 
 }

@@ -14,19 +14,18 @@ import static servlet.ListServlet.arrayList;
 public class EditRecordServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
-//         int id=Integer.parseInt(request.getParameter("id").toString());
-//        System.out.println(id);
-        int i=Integer.parseInt(request.getParameter("id").toString());
+        processRequest(request, response);
+    }
 
-//        for (i = 0; i != arrayList.size(); i++)
-//            if (arrayList.get(i).getId() == id)  break;
+    private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        int number=Integer.parseInt(request.getParameter("id").toString());
 
-        request.getSession().setAttribute("id", arrayList.get(i).getId());
-        request.getSession().setAttribute("name", arrayList.get(i).getName());
-        request.getSession().setAttribute("surname", arrayList.get(i).getSurname());
-        request.getSession().setAttribute("phone", arrayList.get(i).getPhone());
-
-        request.getRequestDispatcher("View/record.jsp").include(request, response);
+        request.getSession().setAttribute("id", arrayList.get(number).getId());
+        request.getSession().setAttribute("name", arrayList.get(number).getName());
+        request.getSession().setAttribute("surname", arrayList.get(number).getSurname());
+        request.getSession().setAttribute("phone", arrayList.get(number).getPhone());
+       
+        request.getRequestDispatcher("jsp/record.jsp").include(request, response);
     }
 
 }

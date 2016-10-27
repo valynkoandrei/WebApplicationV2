@@ -31,15 +31,12 @@ public class ListServlet extends HttpServlet {
 
         try {
             BL bl = new BL();
-
             arrayList = bl.getClientsArrayList();
-
-
-            request.getRequestDispatcher("View/list.jsp").include(request, response);
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+            request.getRequestDispatcher("jsp/list.jsp").include(request, response);
 
     }
 

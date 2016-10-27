@@ -18,7 +18,7 @@ public class BL {
         ArrayList<String> phoneForTable= client.getPhoneFromTable();
 
         for(int i=0; i < nameForTable.size(); i++)
-        clientsArrayList.add(new Clients(idForTable.get(i) ,nameForTable.get(i),surnameForTable.get(i),phoneForTable.get(i)));
+            clientsArrayList.add(new Clients(idForTable.get(i) ,nameForTable.get(i),surnameForTable.get(i),phoneForTable.get(i)));
     }
 
     public ArrayList<Clients> getClientsArrayList(){
