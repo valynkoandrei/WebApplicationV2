@@ -1,16 +1,14 @@
 package Controller;
 
 import DAO.JDBCClient;
+import model.Clients;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-/**
- * Created by Андрей on 25.10.2016.
- */
 public class BL {
  public static ArrayList<Clients> clientsArrayList;
-    public JDBCClient client;
+    private JDBCClient client;
     public BL() throws SQLException {
         client = new JDBCClient();
         clientsArrayList= new ArrayList<>();

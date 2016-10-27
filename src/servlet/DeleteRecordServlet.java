@@ -10,19 +10,18 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-/**
- * Created by Андрей on 21.10.2016.
- */
+import static servlet.ListServlet.arrayList;
+
 @WebServlet("/DeleteRecordServlet")
 public class DeleteRecordServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
 
-        int id = Integer.parseInt(request.getParameter("id"));
-
+        int i = Integer.parseInt(request.getParameter("id").toString());
+        System.out.println(i);
         try {
             BL bl = new BL();
-        bl.deleteRecord(id);
+            bl.deleteRecord(arrayList.get(i).getId());
 
         } catch (SQLException e) {
             e.printStackTrace();

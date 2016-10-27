@@ -1,10 +1,8 @@
-package Controller;
+package model;
 
-/**
- * Created by Андрей on 21.10.2016.
- */
+
 public class Clients {
-    int id;
+    private int id;
     private String name;
     private String surname;
     private String phone;
@@ -32,22 +30,6 @@ public class Clients {
 
     public String getPhone() {
         return phone;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
     }
 
 
