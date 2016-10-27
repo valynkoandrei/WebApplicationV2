@@ -3,50 +3,39 @@ package Controller;
 import DAO.JDBCClient;
 import model.Clients;
 
-import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class BL {
- public static ArrayList<Clients> clientsArrayList;
+    public static ArrayList<Clients> clientsArrayList;
     private JDBCClient client;
-    public BL() throws SQLException {
-        client = new JDBCClient();
-        clientsArrayList= new ArrayList<>();
-        ArrayList<Integer> idForTable= client.getIdFromTable();
-        ArrayList<String> nameForTable= client.getNameFromTable();
-        ArrayList<String> surnameForTable= client.getSurnameFromTable();
-        ArrayList<String> phoneForTable= client.getPhoneFromTable();
 
-        for(int i=0; i < nameForTable.size(); i++)
-            clientsArrayList.add(new Clients(idForTable.get(i) ,nameForTable.get(i),surnameForTable.get(i),phoneForTable.get(i)));
+    public BL() {
+
+        client = new JDBCClient();
+        clientsArrayList = new ArrayList<>();
+        ArrayList<Integer> idForTable = client.getIdFromTable();
+        ArrayList<String> nameForTable = client.getNameFromTable();
+        ArrayList<String> surnameForTable = client.getSurnameFromTable();
+        ArrayList<String> phoneForTable = client.getPhoneFromTable();
+
+        for (int i = 0; i < nameForTable.size(); i++)
+            clientsArrayList.add(new Clients(idForTable.get(i), nameForTable.get(i), surnameForTable.get(i), phoneForTable.get(i)));
     }
 
-    public ArrayList<Clients> getClientsArrayList(){
+    public ArrayList<Clients> getClientsArrayList() {
         return clientsArrayList;
     }
 
-    public void updateArrayList(int id, String name, String surname, String phone){
-        try {
-            client.updateFromTable(id, name, surname, phone);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+    public void updateArrayList(int id, String name, String surname, String phone) {
+        client.updateFromTable(id, name, surname, phone);
     }
 
-    public void addRecord( String name, String surname, String phone){
-        try {
-            client.addFromTable(name,surname, phone);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+    public void addRecord(String name, String surname, String phone) {
+        client.addFromTable(name, surname, phone);
     }
 
-    public void deleteRecord(int id){
-        try {
-            client.deleteFromTable(id);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+    public void deleteRecord(int id) {
+        client.deleteFromTable(id);
     }
 
 }

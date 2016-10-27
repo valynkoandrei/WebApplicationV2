@@ -12,75 +12,105 @@ public class JDBCClient {
 
     private Connection connection;
 
-    public JDBCClient() throws SQLException {
+    public JDBCClient() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             final String URL = "jdbc:mysql://localhost:3306/test";
             final String USERNAME = "root";
             final String PASSWORD = "root";
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-
         } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
     }
 
-    public ArrayList<Integer> getIdFromTable() throws SQLException {
-        ArrayList<Integer> names = new ArrayList<Integer>();
+    public ArrayList<Integer> getIdFromTable() {
+        ArrayList<Integer> names = new ArrayList<>();
         String query = "SELECT id FROM users";
-        ResultSet resultSet = connection.createStatement().executeQuery(query);
-        while (resultSet.next()) {
-            names.add(resultSet.getInt("id"));
+        ResultSet resultSet;
+        try {
+            resultSet = connection.createStatement().executeQuery(query);
+            while (resultSet.next())
+                names.add(resultSet.getInt("id"));
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         return names;
     }
 
-    public ArrayList<String> getNameFromTable() throws SQLException {
-        ArrayList<String> names = new ArrayList<String>();
+    public ArrayList<String> getNameFromTable() {
+        ArrayList<String> names = new ArrayList<>();
         String query = "SELECT name FROM users";
-        ResultSet resultSet = connection.createStatement().executeQuery(query);
-        while (resultSet.next()) {
-            names.add(resultSet.getString("name"));
+        ResultSet resultSet;
+        try {
+            resultSet = connection.createStatement().executeQuery(query);
+            while (resultSet.next())
+                names.add(resultSet.getString("name"));
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         return names;
     }
 
-    public ArrayList<String> getSurnameFromTable() throws SQLException {
-        ArrayList<String> surnames = new ArrayList<String>();
+    public ArrayList<String> getSurnameFromTable() {
+        ArrayList<String> surnames = new ArrayList<>();
         String query = "SELECT surname FROM users";
-        ResultSet resultSet = connection.createStatement().executeQuery(query);
-        while (resultSet.next()) {
-            surnames.add(resultSet.getString("surname"));
+        ResultSet resultSet;
+        try {
+            resultSet = connection.createStatement().executeQuery(query);
+            while (resultSet.next())
+                surnames.add(resultSet.getString("surname"));
+
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         return surnames;
     }
 
-    public ArrayList<String> getPhoneFromTable() throws SQLException {
-        ArrayList<String> phones = new ArrayList<String>();
+    public ArrayList<String> getPhoneFromTable() {
+        ArrayList<String> phones = new ArrayList<>();
         String query = "SELECT phone FROM users";
-        ResultSet resultSet = connection.createStatement().executeQuery(query);
-        while (resultSet.next()) {
-            phones.add(resultSet.getString("phone"));
+        ResultSet resultSet;
+        try {
+            resultSet = connection.createStatement().executeQuery(query);
+            while (resultSet.next())
+                phones.add(resultSet.getString("phone"));
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         return phones;
     }
 
-    public void updateFromTable(int id, String name, String surname, String phone) throws SQLException {
+    public void updateFromTable(int id, String name, String surname, String phone) {
         String query = "Update users set name=" + "'" + name + "'," + " surname=" + "'" + surname + "'," + " phone=" + "'" + phone + "'" + " where id=" + "'" + id + "'";
-        connection.createStatement().executeUpdate(query);
+        try {
+            connection.createStatement().executeUpdate(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
     }
 
-    public void addFromTable(String name, String surname, String phone) throws SQLException {
+    public void addFromTable(String name, String surname, String phone) {
         String query = "INSERT into users (name, surname, phone) VALUES(" + "'" + name + "'" + "," + "'" + surname + "'" + "," + "'" + phone + "'" + ")";
-        connection.createStatement().executeUpdate(query);
+        try {
+            connection.createStatement().executeUpdate(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
     }
 
-    public void deleteFromTable(int id) throws SQLException {
+    public void deleteFromTable(int id) {
         String query = "DELETE FROM users WHERE id='" + id + "'";
-        connection.createStatement().executeUpdate(query);
+        try {
+            connection.createStatement().executeUpdate(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
     }
 }

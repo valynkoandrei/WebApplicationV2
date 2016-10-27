@@ -8,12 +8,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.SQLException;
 
 import static servlet.ListServlet.arrayList;
 
 @WebServlet("/DeleteRecordServlet")
 public class DeleteRecordServlet extends HttpServlet {
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
         processRequest(request, response);
@@ -22,13 +22,9 @@ public class DeleteRecordServlet extends HttpServlet {
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int i = Integer.parseInt(request.getParameter("id").toString());
         System.out.println(i);
-        try {
-            BL bl = new BL();
-            bl.deleteRecord(arrayList.get(i).getId());
+        BL bl = new BL();
+        bl.deleteRecord(arrayList.get(i).getId());
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
 
         request.getRequestDispatcher("index.jsp").include(request, response);
     }

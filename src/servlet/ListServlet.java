@@ -6,7 +6,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.SQLException;
 import java.util.ArrayList;
 
 import Controller.BL;
@@ -29,14 +28,10 @@ public class ListServlet extends HttpServlet {
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        try {
-            BL bl = new BL();
-            arrayList = bl.getClientsArrayList();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        BL bl = new BL();
+        arrayList = bl.getClientsArrayList();
 
-            request.getRequestDispatcher("jsp/list.jsp").include(request, response);
+        request.getRequestDispatcher("jsp/list.jsp").include(request, response);
 
     }
 
