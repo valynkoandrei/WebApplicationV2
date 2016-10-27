@@ -27,7 +27,7 @@ public class SaveRecordServlet extends HttpServlet {
         if (id == 0)
             bl.addRecord(inputName, inputSurname, inputPhone);
         else
-            bl.updateArrayList(id, inputName, inputSurname, inputPhone);
+            bl.updateRecord(id, inputName, inputSurname, inputPhone);
 
         request.getRequestDispatcher("index.jsp").include(request, response);
     }

@@ -83,7 +83,7 @@ public class JDBCClient {
         return phones;
     }
 
-    public void updateFromTable(int id, String name, String surname, String phone) {
+    public void updateRecordFromTable(int id, String name, String surname, String phone) {
         String query = "Update users set name=" + "'" + name + "'," + " surname=" + "'" + surname + "'," + " phone=" + "'" + phone + "'" + " where id=" + "'" + id + "'";
         try {
             connection.createStatement().executeUpdate(query);
@@ -93,7 +93,7 @@ public class JDBCClient {
 
     }
 
-    public void addFromTable(String name, String surname, String phone) {
+    public void addRecordFromTable(String name, String surname, String phone) {
         String query = "INSERT into users (name, surname, phone) VALUES(" + "'" + name + "'" + "," + "'" + surname + "'" + "," + "'" + phone + "'" + ")";
         try {
             connection.createStatement().executeUpdate(query);
@@ -103,7 +103,7 @@ public class JDBCClient {
 
     }
 
-    public void deleteFromTable(int id) {
+    public void deleteRecordFromTable(int id) {
         String query = "DELETE FROM users WHERE id='" + id + "'";
         try {
             connection.createStatement().executeUpdate(query);

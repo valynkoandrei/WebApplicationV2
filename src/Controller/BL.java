@@ -27,16 +27,16 @@ public class BL {
         return clientsArrayList;
     }
 
-    public void updateArrayList(int id, String name, String surname, String phone) {
-        client.updateFromTable(id, name, surname, phone);
+    public void updateRecord(int id, String name, String surname, String phone) {
+        client.updateRecordFromTable(id, name, surname, phone);
     }
 
     public void addRecord(String name, String surname, String phone) {
-        client.addFromTable(name, surname, phone);
+        client.addRecordFromTable(name, surname, phone);
     }
 
     public void deleteRecord(int id) {
-        client.deleteFromTable(id);
+        client.deleteRecordFromTable(id);
     }
 
 }

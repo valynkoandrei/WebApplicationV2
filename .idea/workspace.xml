@@ -40,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/jsp/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -53,28 +53,24 @@
       <file leaf-file-name="BL.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/BL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-134">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#827#828#0" expanded="true" />
                 <element signature="e#866#867#0" expanded="true" />
-                <element signature="e#1088#1089#0" expanded="true" />
-                <element signature="e#1145#1146#0" expanded="true" />
-                <element signature="e#1185#1186#0" expanded="true" />
-                <element signature="e#1227#1228#0" expanded="true" />
+                <element signature="e#1194#1195#0" expanded="true" />
+                <element signature="e#1242#1243#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ListServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet/ListServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="121">
+              <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,20 +79,20 @@
         <entry file="file://$PROJECT_DIR$/src/DAO/JDBCClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-51">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
               <folding>
-                <marker date="1477558954161" expanded="true" signature="840:860" ph="SELECT id FR... users" />
-                <marker date="1477558954161" expanded="true" signature="1302:1324" ph="SELECT name users" />
-                <marker date="1477558954161" expanded="true" signature="1777:1802" ph="SELECT surna... users" />
-                <marker date="1477558954161" expanded="true" signature="2261:2284" ph="SELECT phone... users" />
-                <marker date="1477558954161" expanded="true" signature="2716:2859" ph="Update users... " />
-                <marker date="1477558954161" expanded="true" signature="3123:3177" ph="INSERT into users... " />
-                <marker date="1477558954161" expanded="true" signature="3123:3202" ph="INSERT into users... " />
-                <marker date="1477558954161" expanded="true" signature="3123:3224" ph="INSERT into users... " />
-                <marker date="1477558954161" expanded="true" signature="3123:3244" ph="INSERT into users... " />
-                <marker date="1477558954161" expanded="true" signature="3123:3245" ph="INSERT into users... " />
-                <marker date="1477558954161" expanded="true" signature="3123:3250" ph="INSERT into users... " />
-                <marker date="1477558954161" expanded="true" signature="3482:3521" ph="DELETE FROM " />
+                <marker date="1477559755261" expanded="true" signature="840:860" ph="SELECT id FR... users" />
+                <marker date="1477559755261" expanded="true" signature="1302:1324" ph="SELECT name users" />
+                <marker date="1477559755261" expanded="true" signature="1777:1802" ph="SELECT surna... users" />
+                <marker date="1477559755261" expanded="true" signature="2261:2284" ph="SELECT phone... users" />
+                <marker date="1477559755261" expanded="true" signature="2722:2865" ph="Update users... " />
+                <marker date="1477559755261" expanded="true" signature="3135:3189" ph="INSERT into users... " />
+                <marker date="1477559755261" expanded="true" signature="3135:3214" ph="INSERT into users... " />
+                <marker date="1477559755261" expanded="true" signature="3135:3236" ph="INSERT into users... " />
+                <marker date="1477559755261" expanded="true" signature="3135:3256" ph="INSERT into users... " />
+                <marker date="1477559755261" expanded="true" signature="3135:3257" ph="INSERT into users... " />
+                <marker date="1477559755261" expanded="true" signature="3135:3262" ph="INSERT into users... " />
+                <marker date="1477559755261" expanded="true" signature="3500:3539" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -140,12 +136,12 @@
         <option value="$PROJECT_DIR$/web/jsp/record.jsp" />
         <option value="$PROJECT_DIR$/src/model/Clients.java" />
         <option value="$PROJECT_DIR$/src/servlet/EditRecordServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/ListServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/DeleteRecordServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/SaveRecordServlet.java" />
+        <option value="$PROJECT_DIR$/web/jsp/list.jsp" />
         <option value="$PROJECT_DIR$/src/DAO/JDBCClient.java" />
         <option value="$PROJECT_DIR$/src/Controller/BL.java" />
-        <option value="$PROJECT_DIR$/web/jsp/list.jsp" />
+        <option value="$PROJECT_DIR$/src/servlet/ListServlet.java" />
       </list>
     </option>
   </component>
@@ -855,15 +851,15 @@
       <option name="presentableId" value="Default" />
       <updated>1477038398713</updated>
       <workItem from="1477038404457" duration="1220000" />
-      <workItem from="1477041119004" duration="71717000" />
+      <workItem from="1477041119004" duration="73078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72937000" />
+    <option name="totallyTimeSpent" value="74298000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -921,7 +917,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="34" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1037,14 +1033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1053,49 +1041,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/ListServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DAO/JDBCClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
           <folding>
-            <marker date="1477558954161" expanded="true" signature="840:860" ph="SELECT id FR... users" />
-            <marker date="1477558954161" expanded="true" signature="1302:1324" ph="SELECT name users" />
-            <marker date="1477558954161" expanded="true" signature="1777:1802" ph="SELECT surna... users" />
-            <marker date="1477558954161" expanded="true" signature="2261:2284" ph="SELECT phone... users" />
-            <marker date="1477558954161" expanded="true" signature="2716:2859" ph="Update users... " />
-            <marker date="1477558954161" expanded="true" signature="3123:3177" ph="INSERT into users... " />
-            <marker date="1477558954161" expanded="true" signature="3123:3202" ph="INSERT into users... " />
-            <marker date="1477558954161" expanded="true" signature="3123:3224" ph="INSERT into users... " />
-            <marker date="1477558954161" expanded="true" signature="3123:3244" ph="INSERT into users... " />
-            <marker date="1477558954161" expanded="true" signature="3123:3245" ph="INSERT into users... " />
-            <marker date="1477558954161" expanded="true" signature="3123:3250" ph="INSERT into users... " />
-            <marker date="1477558954161" expanded="true" signature="3482:3521" ph="DELETE FROM " />
+            <marker date="1477559755261" expanded="true" signature="840:860" ph="SELECT id FR... users" />
+            <marker date="1477559755261" expanded="true" signature="1302:1324" ph="SELECT name users" />
+            <marker date="1477559755261" expanded="true" signature="1777:1802" ph="SELECT surna... users" />
+            <marker date="1477559755261" expanded="true" signature="2261:2284" ph="SELECT phone... users" />
+            <marker date="1477559755261" expanded="true" signature="2722:2865" ph="Update users... " />
+            <marker date="1477559755261" expanded="true" signature="3135:3189" ph="INSERT into users... " />
+            <marker date="1477559755261" expanded="true" signature="3135:3214" ph="INSERT into users... " />
+            <marker date="1477559755261" expanded="true" signature="3135:3236" ph="INSERT into users... " />
+            <marker date="1477559755261" expanded="true" signature="3135:3256" ph="INSERT into users... " />
+            <marker date="1477559755261" expanded="true" signature="3135:3257" ph="INSERT into users... " />
+            <marker date="1477559755261" expanded="true" signature="3135:3262" ph="INSERT into users... " />
+            <marker date="1477559755261" expanded="true" signature="3500:3539" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/BL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-134">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#827#828#0" expanded="true" />
             <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1227#1228#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/ListServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/jsp/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
