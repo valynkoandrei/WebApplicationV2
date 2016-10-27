@@ -3,9 +3,19 @@
 <html>
 <head>
     <title>List</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" >
 </head>
 <body>
+<h1 style="text-align: center">Phone Book</h1>
 <table border="1">
+    <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Phone</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
     <% for (int i = 0; i != arrayList.size(); i++) {%>
     <tr>
         <td><%=arrayList.get(i).getId()%>
@@ -37,5 +47,6 @@
 <form name="Add" action="AddRecordServlet" method="POST">
     <input type="submit" name="showButton" class="input-button" value="Add"/>
 </form>
+<script src="js/alert.js" ></script>
 </body>
 </html>

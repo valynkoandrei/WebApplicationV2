@@ -1,0 +1,20 @@
+
+body {
+    background-color: aquamarine;
+    font-family: sans-serif;
+}
+table {
+    /*width: 70%;*/
+    margin: auto;
+    border-radius: 5px;
+
+}
+
+td {
+    text-align: center;
+    padding: 5px 15px;
+}
+
+form {
+    text-align: center;
+}

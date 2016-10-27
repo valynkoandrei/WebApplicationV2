@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+
 </head>
 <body>
 <form name="Save" action="SaveRecordServlet" method="POST">
